@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="toggle"
+              android:icon="@drawable/ic_qu_shadowsocks_launcher"
+              android:shortcutShortLabel="@string/quick_toggle"
+              android:shortcutLongLabel="@string/quick_toggle">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="co.tgbot.peekfun"
+                android:targetClass="co.tgbot.peekfun.QuickToggleShortcut" />
+    </shortcut>
+    <shortcut android:shortcutId="switch"
+              android:icon="@drawable/ic_qu_shadowsocks_launcher"
+              android:shortcutShortLabel="@string/quick_switch"
+              android:shortcutLongLabel="@string/quick_switch">
+        <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="co.tgbot.peekfun"
+                android:targetClass="co.tgbot.peekfun.ShadowsocksQuickSwitchActivity" />
+    </shortcut>
+    <shortcut android:shortcutId="scan"
+              android:icon="@drawable/ic_qu_camera_launcher"
+              android:shortcutShortLabel="@string/add_profile_methods_scan_qr_code"
+              android:shortcutLongLabel="@string/add_profile_methods_scan_qr_code">
+        <intent android:action="co.tgbot.peekfun.intent.action.SCAN"
+                android:targetPackage="co.tgbot.peekfun"
+                android:targetClass="co.tgbot.peekfun.ProfileManagerActivity" />
+    </shortcut>
+</shortcuts>
